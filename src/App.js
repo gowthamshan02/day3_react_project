@@ -1,0 +1,40 @@
+import logo from './logo.svg';
+import './App.css';
+import pic from "../src/assets/BlankFarawayKingsnake-size_restricted.gif"
+import Home from './Components/Home';
+import About from './Components/About';
+import Menu from './Components/Menu';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
+
+function App() {
+  return (
+    <div className="App">
+      <header>
+      
+      <nav className='nav-bar'>
+        {/* <video className='vedio' src={vid} loop muted autoPlay={true}/> */}
+      <div className='nav-links'>
+      <ul>
+        <li><a href=''>Home</a></li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#menu'>Menu</a> </li>
+        <li><a href=''>Contact</a></li>
+      </ul>
+      <img src={pic} alt=""/><p>Dinesh's Brews</p>
+      </div>
+      </nav>
+      </header>
+
+     <Home/>
+     <About/>
+     <Menu/>
+
+    </div>
+  );
+}
+
+export default App;
